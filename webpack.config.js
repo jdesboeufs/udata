@@ -13,7 +13,6 @@ const languages = ['en', 'es', 'fr'];
 
 module.exports = {
     entry: {
-        admin: './js/admin.js',
         dataset: './js/front/dataset',
         territory: './js/front/territory',
         reuse: './js/front/reuse',
