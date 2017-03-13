@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const node_path = path.join(__dirname, 'node_modules');
 
 const css_loader = ExtractTextPlugin.extract('style', 'css?sourceMap');
 const less_loader = ExtractTextPlugin.extract('style', 'css?sourceMap!less?sourceMap=source-map-less-inline');
@@ -39,7 +38,6 @@ module.exports = {
             path.join(__dirname, 'js'),
         ],
         alias: {
-            'jquery-slimscroll': path.join(node_path, 'jquery-slimscroll/jquery.slimscroll'),
             'handlebars': 'handlebars/runtime',
             'swaggerui': 'swagger-ui/dist',
         }
